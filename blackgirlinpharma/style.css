@@ -1,0 +1,120 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  line-height: 1.6;
+  background: #fffaf8;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ff6f61, #ffb347);
+  color: white;
+  text-align: center;
+  padding: 7rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.btn {
+  background: #111;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 300px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.socials a {
+  color: #ffb347;
+}
