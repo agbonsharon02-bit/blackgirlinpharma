@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+  document.documentElement.classList.add('js-ready');
+
   // --- Sticky Navbar ---
   var navbar = document.getElementById('navbar');
   var lastScroll = 0;
