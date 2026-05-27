@@ -1564,3 +1564,30 @@ ul {
   }
 
 }
+
+.career-hero {
+  padding: 100px 20px;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.career-section {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.career-section h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.career-section p,
+.career-section li {
+  line-height: 1.8;
+  font-size: 18px;
+}
