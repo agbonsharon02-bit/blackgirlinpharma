@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharma Career Matchmaker Quiz | Black Girl In Pharma</title>
+  <meta name="description" content="Discover which pharma career fits your strengths and work style. Take the free Black Girl In Pharma career matchmaker quiz — 10 questions, personalised top 3 results.">
+  <meta name="keywords" content="pharma career quiz, pharmaceutical career test, which pharma career is right for me, Black women pharma careers Canada">
+  <meta name="theme-color" content="#000000">
+  <link rel="canonical" href="https://blackgirlinpharma.com/career-quiz.html">
+  <meta property="og:title" content="Pharma Career Matchmaker Quiz | Black Girl In Pharma">
+  <meta property="og:site_name" content="Black Girl In Pharma">
+  <meta property="og:description" content="10 questions. Personalised top 3 career matches. Find your path in pharma.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://blackgirlinpharma.com/career-quiz.html">
+  <meta property="og:image" content="https://blackgirlinpharma.com/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pharma Career Matchmaker Quiz | Black Girl In Pharma">
+  <meta name="twitter:description" content="10 questions. Personalised top 3 career matches. Find your path in pharma.">
+  <meta name="twitter:image" content="https://blackgirlinpharma.com/social-preview.png">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CPJQK3HVZ1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-CPJQK3HVZ1');
+  </script>
+  <meta name="robots" content="index, follow">
+
+  <style>
+
+    /* ── Quiz Hero ── */
+    .quiz-hero {
+      position: relative;
+      min-height: 58vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(150deg, var(--black) 0%, #1a1420 30%, #1e1a2e 55%, #141820 80%, var(--black) 100%);
+      overflow: hidden;
+    }
+    .quiz-hero::before {
+      content: '';
+      position: absolute;
+      top: -30%; right: -10%;
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(200,162,77,0.1) 0%, rgba(200,162,77,0.03) 40%, transparent 70%);
+      border-radius: 50%;
+      animation: heroFloat 18s ease-in-out infinite;
+    }
+    .quiz-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -20%; left: -5%;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(140,58,79,0.08) 0%, rgba(242,218,200,0.04) 40%, transparent 70%);
+      border-radius: 50%;
+      animation: heroFloat 14s ease-in-out infinite reverse;
+    }
+    .quiz-hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 160px 24px 80px;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .quiz-hero-content .hero-tag { margin-bottom: 24px; }
+    .quiz-hero-content h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: -0.03em;
+    }
+    .quiz-hero-content .hero-sub {
+      margin-bottom: 44px;
+      max-width: 580px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 28px;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+    }
+    .breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; transition: color var(--transition); }
+    .breadcrumb a:hover { color: var(--gold); }
+    .breadcrumb-sep { color: rgba(255,255,255,0.25); font-size: 1rem; }
+    .breadcrumb-current { color: var(--gold); font-weight: 600; }
+
+    /* ── Quiz Body ── */
+    .quiz-body {
+      background: var(--cream);
+      padding: 80px 0 100px;
+    }
+    .quiz-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    /* ── Disclaimer Box ── */
+    .quiz-disclaimer {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: var(--white);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      padding: 20px 24px;
+      margin-bottom: 36px;
+      box-shadow: var(--shadow-sm);
+    }
+    .quiz-disclaimer-icon { flex-shrink: 0; color: var(--gold); margin-top: 2px; }
+    .quiz-disclaimer p { font-size: 0.875rem; color: var(--gray-700); line-height: 1.7; margin: 0; }
+    .quiz-disclaimer p + p { margin-top: 8px; }
+    .quiz-disclaimer strong { color: var(--gray-900); }
+
+    /* ── Intro Screen ── */
+    .quiz-intro-header {
+      text-align: center;
+      margin-bottom: 44px;
+    }
+    .quiz-intro-header .section-tag { display: inline-block; margin-bottom: 16px; }
+    .quiz-intro-header h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      color: var(--gray-900);
+      letter-spacing: -0.025em;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .quiz-intro-header p {
+      color: var(--gray-600);
+      font-size: 1rem;
+      line-height: 1.75;
+      max-width: 580px;
+      margin: 0 auto;
+    }
+    .quiz-intro-features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+    .quiz-feature {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-md);
+      padding: 22px 20px;
+      text-align: center;
+      transition: var(--transition);
+    }
+    .quiz-feature:hover {
+      border-color: var(--gold);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-sm);
+    }
+    .quiz-feature-icon {
+      width: 44px; height: 44px;
+      background: linear-gradient(135deg, rgba(200,162,77,0.15), rgba(242,218,200,0.25));
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold);
+      margin: 0 auto 12px;
+    }
+    .quiz-feature p { font-size: 0.82rem; color: var(--gray-600); font-weight: 500; line-height: 1.4; }
+    .quiz-start-wrap { text-align: center; }
+
+    /* ── Progress Bar ── */
+    .quiz-progress-wrap { margin-bottom: 40px; }
+    .quiz-progress-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .quiz-progress-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--gray-600);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .quiz-progress-pct { font-size: 0.8rem; font-weight: 700; color: var(--gold); }
+    .quiz-progress-track {
+      height: 5px;
+      background: var(--gray-200);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .quiz-progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      border-radius: 5px;
+      transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ── Question Meta ── */
+    .quiz-q-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .quiz-q-num {
+      font-family: var(--font-display);
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: var(--gray-200);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+    .quiz-q-divider { width: 1px; height: 40px; background: var(--gray-200); }
+    .quiz-q-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    #question-text {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+      font-weight: 700;
+      color: var(--gray-900);
+      line-height: 1.35;
+      margin-bottom: 28px;
+    }
+
+    /* ── Option Cards ── */
+    .quiz-options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+    .quiz-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 18px 22px;
+      background: var(--white);
+      border: 1.5px solid var(--gray-200);
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: all var(--transition);
+      user-select: none;
+    }
+    .quiz-option:hover {
+      border-color: rgba(200,162,77,0.5);
+      background: rgba(200,162,77,0.03);
+      transform: translateX(3px);
+    }
+    .quiz-option.selected {
+      border-color: var(--gold);
+      background: rgba(200,162,77,0.07);
+    }
+    .option-letter {
+      flex-shrink: 0;
+      width: 34px; height: 34px;
+      background: var(--gray-100);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--gray-600);
+      transition: all var(--transition);
+    }
+    .quiz-option.selected .option-letter {
+      background: var(--gold);
+      color: var(--black);
+    }
+    .option-text {
+      font-size: 0.93rem;
+      color: var(--gray-700);
+      line-height: 1.65;
+      padding-top: 5px;
+    }
+    .quiz-option.selected .option-text {
+      color: var(--gray-900);
+      font-weight: 500;
+    }
+
+    /* ── Quiz Nav Buttons ── */
+    .quiz-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .quiz-btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 26px;
+      border-radius: 50px;
+      border: 1.5px solid var(--gray-200);
+      background: transparent;
+      color: var(--gray-600);
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .quiz-btn-back:hover { border-color: var(--gray-300); color: var(--gray-800); }
+    .quiz-btn-next {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 32px;
+      border-radius: 50px;
+      border: none;
+      background: var(--gold);
+      color: var(--black);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all var(--transition);
+      letter-spacing: 0.02em;
+    }
+    .quiz-btn-next:hover:not(:disabled) {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-gold);
+    }
+    .quiz-btn-next:disabled { opacity: 0.45; cursor: not-allowed; }
+
+    /* ── Results Header ── */
+    .results-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .results-header .section-tag { display: inline-block; margin-bottom: 14px; }
+    .results-header h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      color: var(--gray-900);
+      letter-spacing: -0.025em;
+      margin-bottom: 10px;
+    }
+    .results-header p { color: var(--gray-600); font-size: 0.95rem; line-height: 1.7; }
+
+    /* ── Result Cards ── */
+    .results-top3 {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+    .result-card {
+      background: var(--gray-900);
+      border-radius: var(--radius-lg);
+      padding: 36px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .result-card::before {
+      content: '';
+      position: absolute;
+      top: -30%; right: -5%;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(200,162,77,0.06) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .result-card-inner { position: relative; z-index: 2; }
+    .result-rank-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 14px;
+      border-radius: 50px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .result-card:nth-child(1) .result-rank-badge {
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--black);
+    }
+    .result-card:nth-child(2) .result-rank-badge {
+      background: rgba(200,162,77,0.15);
+      color: var(--gold-light);
+      border: 1px solid rgba(200,162,77,0.3);
+    }
+    .result-card:nth-child(3) .result-rank-badge {
+      background: rgba(255,255,255,0.07);
+      color: rgba(255,255,255,0.55);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .result-name {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+      line-height: 1.2;
+    }
+    .result-score-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    .result-score-track {
+      flex: 1;
+      height: 6px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .result-score-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      border-radius: 6px;
+      width: 0%;
+      transition: width 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .result-score-num {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--gold);
+      min-width: 56px;
+      text-align: right;
+      letter-spacing: -0.02em;
+    }
+    .result-why {
+      color: rgba(255,255,255,0.62);
+      font-size: 0.92rem;
+      line-height: 1.75;
+      margin-bottom: 28px;
+      font-weight: 300;
+    }
+    .result-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 26px;
+      border-radius: 50px;
+      background: var(--gold);
+      color: var(--black);
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: all var(--transition);
+    }
+    .result-cta-btn:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-gold);
+    }
+    .result-cta-btn svg { transition: transform var(--transition); }
+    .result-cta-btn:hover svg { transform: translateX(3px); }
+
+    /* ── Results Disclaimer ── */
+    .results-disclaimer {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: var(--white);
+      border-left: 3px solid rgba(200,162,77,0.45);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      padding: 20px 24px;
+      margin-bottom: 52px;
+      box-shadow: var(--shadow-sm);
+    }
+    .results-disclaimer p { font-size: 0.875rem; color: var(--gray-600); line-height: 1.7; margin: 0; }
+    .results-disclaimer p + p { margin-top: 6px; }
+
+    /* ── All Careers ── */
+    .all-careers-section {
+      text-align: center;
+      padding: 44px 0 0;
+      border-top: 1px solid var(--gray-200);
+    }
+    .all-careers-section h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 8px;
+    }
+    .all-careers-section > p {
+      color: var(--gray-600);
+      font-size: 0.88rem;
+      margin-bottom: 26px;
+    }
+
+    /* ── Retake ── */
+    .retake-wrap {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 36px;
+      border-top: 1px solid var(--gray-200);
+    }
+    .retake-wrap p { color: var(--gray-600); font-size: 0.9rem; margin-bottom: 18px; }
+    .quiz-btn-retake {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 30px;
+      border-radius: 50px;
+      border: 1.5px solid var(--gray-300);
+      background: transparent;
+      color: var(--gray-700);
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .quiz-btn-retake:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: rgba(200,162,77,0.04);
+    }
+
+    /* ── CTA Section (same as guide-cta on career guide pages) ── */
+    .guide-cta {
+      background: linear-gradient(150deg, var(--black) 0%, #1a1420 40%, #1e1a2e 70%, var(--black) 100%);
+      padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .guide-cta::before {
+      content: '';
+      position: absolute;
+      top: -40%; right: -10%;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(200,162,77,0.08) 0%, transparent 65%);
+      border-radius: 50%;
+    }
+    .guide-cta-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .guide-cta-content .section-tag { display: block; margin-bottom: 18px; }
+    .guide-cta-content h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.025em;
+      margin-bottom: 18px;
+      line-height: 1.15;
+    }
+    .guide-cta-content p {
+      color: rgba(255,255,255,0.6);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 40px;
+      font-weight: 300;
+    }
+    .guide-cta-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .quiz-hero-content { padding: 130px 16px 60px; }
+      .quiz-intro-features {
+        grid-template-columns: 1fr;
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .result-card { padding: 28px 24px; }
+    }
+    @media (max-width: 480px) {
+      .quiz-nav { flex-direction: column-reverse; }
+      .quiz-btn-back, .quiz-btn-next { width: 100%; justify-content: center; }
+      .guide-cta-btns { flex-direction: column; align-items: center; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <nav class="container nav-container">
+      <a href="index.html" class="logo">Black Girl <span>In Pharma</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#careers">Careers</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="career-quiz.html">Career Quiz</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="index.html#contact" class="nav-cta">Join Us</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="quiz-hero">
+    <div class="hero-overlay"></div>
+    <div class="quiz-hero-content">
+      <nav class="breadcrumb fade-up" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">&#8250;</span>
+        <span class="breadcrumb-current">Career Quiz</span>
+      </nav>
+      <p class="hero-tag fade-up delay-1">Find Your Path</p>
+      <h1 class="fade-up delay-2">Pharma Career<br>Matchmaker</h1>
+      <p class="hero-sub fade-up delay-3">Not sure which pharma career is right for you? Answer 10 questions about your strengths, interests, and work style — we'll match you to your top 3 career paths.</p>
+      <div class="hero-btns fade-up delay-4">
+        <a href="#quiz-anchor" class="btn btn-primary">Take the Quiz</a>
+        <a href="index.html#careers" class="btn btn-outline">Explore All Careers</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- QUIZ BODY -->
+  <section class="quiz-body" id="quiz-anchor">
+    <div class="container">
+      <div class="quiz-wrap">
+
+
+        <!-- ══════════════════════════════════════ -->
+        <!--  SCREEN 1 — INTRO                      -->
+        <!-- ══════════════════════════════════════ -->
+        <div id="screen-intro">
+
+          <div class="quiz-intro-header scroll-reveal">
+            <p class="section-tag">10 Questions</p>
+            <h2>Which Pharma Career Were You Made For?</h2>
+            <p>This quick quiz looks at how you think, what excites you, and how you work best — then matches you to the pharma careers that fit your natural strengths and personality.</p>
+          </div>
+
+          <div class="quiz-intro-features scroll-reveal">
+            <div class="quiz-feature">
+              <div class="quiz-feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <p>Takes about<br><strong>3–4 minutes</strong></p>
+            </div>
+            <div class="quiz-feature">
+              <div class="quiz-feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <p>Matches you to<br><strong>Top 3 Careers</strong></p>
+            </div>
+            <div class="quiz-feature">
+              <div class="quiz-feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+              </div>
+              <p>Links to<br><strong>Full Career Guides</strong></p>
+            </div>
+          </div>
+
+          <div class="quiz-disclaimer scroll-reveal">
+            <div class="quiz-disclaimer-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <div>
+              <p><strong>A quick note before you begin:</strong> This quiz is designed for exploration and curiosity only — it is not professional career advice. Results are based entirely on the answers you select and are meant to spark ideas and point you toward careers worth exploring further.</p>
+              <p>Everyone's journey into pharma is different. Before making any career decisions, we strongly encourage you to do your own research, speak with a career advisor, and connect with professionals already working in roles that interest you. The BGIP community is a wonderful place to start those conversations.</p>
+            </div>
+          </div>
+
+          <div class="quiz-start-wrap scroll-reveal">
+            <button onclick="quizStart()" class="btn btn-primary" style="padding:16px 52px; font-size:1rem;">
+              Start the Quiz
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left:8px"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+
+        </div>
+        <!-- END INTRO -->
+
+
+        <!-- ══════════════════════════════════════ -->
+        <!--  SCREEN 2 — QUESTION                   -->
+        <!-- ══════════════════════════════════════ -->
+        <div id="screen-question" style="display:none">
+
+          <div class="quiz-progress-wrap">
+            <div class="quiz-progress-top">
+              <span class="quiz-progress-label" id="progress-label">Question 1 of 10</span>
+              <span class="quiz-progress-pct" id="progress-pct">10%</span>
+            </div>
+            <div class="quiz-progress-track">
+              <div class="quiz-progress-fill" id="progress-fill" style="width:10%"></div>
+            </div>
+          </div>
+
+          <div class="quiz-q-meta">
+            <span class="quiz-q-num" id="question-num">01</span>
+            <div class="quiz-q-divider"></div>
+            <span class="quiz-q-label">Career Quiz</span>
+          </div>
+
+          <p id="question-text"></p>
+
+          <div class="quiz-options" id="options-list"></div>
+
+          <div class="quiz-nav">
+            <button id="btn-back" class="quiz-btn-back" onclick="quizBack()" style="display:none">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+              Back
+            </button>
+            <button id="btn-next" class="quiz-btn-next" onclick="quizNext()" disabled>
+              Next Question
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+
+        </div>
+        <!-- END QUESTION -->
+
+
+        <!-- ══════════════════════════════════════ -->
+        <!--  SCREEN 3 — RESULTS                    -->
+        <!-- ══════════════════════════════════════ -->
+        <div id="screen-results" style="display:none">
+
+          <div class="results-header">
+            <p class="section-tag">Your Results</p>
+            <h2>Your Top Career Matches</h2>
+            <p>Based on your answers, here are the three pharma careers that align most closely with your strengths and work style.</p>
+          </div>
+
+          <div id="results-top3" class="results-top3"></div>
+
+          <div class="results-disclaimer">
+            <div class="quiz-disclaimer-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <div>
+              <p><strong>Remember:</strong> These results are a starting point, not a final answer. A quiz can point you toward an interesting direction, but the best career decisions come from real research, real conversations, and real experience.</p>
+              <p>Read the full career guides for your top matches, then connect with professionals who are actually doing those jobs. The <a href="index.html#contact" style="color:var(--gold);font-weight:600;">BGIP community</a> is full of Black women working across every one of these fields — reach out, ask questions, and learn from their journeys before you decide.</p>
+            </div>
+          </div>
+
+          <div class="all-careers-section">
+            <h3>Explore All 9 Careers</h3>
+            <p>Curious about a career that didn't make your top 3? Every path is worth exploring.</p>
+            <div class="career-tags" style="justify-content:center;">
+              <a href="regulatory-affairs.html"><span class="tag">Regulatory Affairs</span></a>
+              <a href="clinical-research.html"><span class="tag">Clinical Research</span></a>
+              <a href="quality-assurance.html"><span class="tag">Quality Assurance</span></a>
+              <a href="pharmacovigilance.html"><span class="tag">Pharmacovigilance</span></a>
+              <a href="medical-affairs.html"><span class="tag">Medical Affairs</span></a>
+              <a href="pharma-sales.html"><span class="tag">Pharmaceutical Sales</span></a>
+              <a href="market-access.html"><span class="tag">Market Access</span></a>
+              <a href="biotechnology.html"><span class="tag">Biotechnology</span></a>
+              <a href="clinical-research.html"><span class="tag">Clinical Operations</span></a>
+            </div>
+          </div>
+
+          <div class="retake-wrap">
+            <p>Want to explore different options? Try answering differently.</p>
+            <button class="quiz-btn-retake" onclick="quizRetake()">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4.5"/></svg>
+              Retake the Quiz
+            </button>
+          </div>
+
+        </div>
+        <!-- END RESULTS -->
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA SECTION -->
+  <section class="guide-cta">
+    <div class="guide-cta-content">
+      <span class="section-tag">Join the Movement</span>
+      <h2>Your Community Is Waiting</h2>
+      <p>The BGIP community is filled with Black women at every stage of their pharma career — including professionals already working in the fields you just matched with. Get mentorship, job leads, event invites, and a network that genuinely has your back.</p>
+      <div class="guide-cta-btns">
+        <a href="index.html#contact" class="btn btn-primary">Join the Community</a>
+        <a href="index.html#careers" class="btn btn-outline">Explore All Careers</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Black Girl <span>In Pharma</span></a>
+          <p>Increasing awareness, representation, mentorship, and opportunities for Black women in the pharmaceutical industry.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#careers">Careers</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="career-quiz.html">Career Quiz</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Career Guides</h4>
+          <ul>
+            <li><a href="regulatory-affairs.html">Regulatory Affairs</a></li>
+            <li><a href="clinical-research.html">Clinical Research</a></li>
+            <li><a href="quality-assurance.html">Quality Assurance</a></li>
+            <li><a href="pharmacovigilance.html">Pharmacovigilance</a></li>
+            <li><a href="biotechnology.html">Biotechnology</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Connect</h4>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/company/blackgirlinpharma/" aria-label="LinkedIn" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="cookies.html">Cookie Policy</a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Black Girl In Pharma. All Rights Reserved.</p>
+        <p>Built with purpose. Designed with love.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+  (function () {
+    'use strict';
+
+    var CAREERS = {
+      ra:  { name: 'Regulatory Affairs',   url: 'regulatory-affairs.html',  max: 24,
+             why: 'Your methodical mindset, comfort with complex documentation, and natural affinity for compliance frameworks make you a standout fit for Regulatory Affairs. You\'d thrive navigating Health Canada submissions and guiding products to approval — an essential, highly respected role at every pharma company.' },
+      cr:  { name: 'Clinical Research',    url: 'clinical-research.html',   max: 18,
+             why: 'Your scientific curiosity and drive to stay close to the clinical process make Clinical Research an excellent match. You\'d excel as a CRA or Study Coordinator — keeping trials on protocol and bringing life-saving treatments one step closer to the patients who need them.' },
+      qa:  { name: 'Quality Assurance',    url: 'quality-assurance.html',   max: 18,
+             why: 'Your systematic thinking, eye for process, and commitment to getting every detail right are the hallmarks of a great QA professional. You\'d thrive conducting audits, building GMP-compliant systems, and being the person who ensures every product that reaches a patient is exactly what it should be.' },
+      pv:  { name: 'Pharmacovigilance',    url: 'pharmacovigilance.html',   max: 18,
+             why: 'Your analytical mindset, safety-first orientation, and ability to find patterns in complex data are exactly what Pharmacovigilance demands. You\'d shine as a signal detective — protecting patients from harm long after a drug reaches the market through Canada Vigilance and global safety reporting.' },
+      ma:  { name: 'Medical Affairs',      url: 'medical-affairs.html',     max: 21,
+             why: 'Your blend of scientific depth and standout communication skills is the cornerstone of a Medical Affairs career. You\'d be an outstanding Medical Science Liaison (MSL) — the trusted scientific bridge between your company and the healthcare professionals who depend on accurate, evidence-based information.' },
+      ps:  { name: 'Pharmaceutical Sales', url: 'pharma-sales.html',        max: 23,
+             why: 'Your natural confidence, relationship-building talent, and competitive drive make you ideally suited for Pharma Sales. You\'d thrive managing a territory, consistently hitting targets, and becoming the trusted rep that HCPs genuinely look forward to hearing from.' },
+      mka: { name: 'Market Access',        url: 'market-access.html',       max: 22,
+             why: 'Your strategic thinking, comfort with healthcare economics and payer systems, and passion for ensuring patients can actually access the medicines they need make Market Access a clear calling. You\'d excel navigating CADTH, pCPA, and provincial drug plan strategy across Canada.' },
+      bio: { name: 'Biotechnology',        url: 'biotechnology.html',       max: 23,
+             why: 'Your scientific curiosity, excitement about discovery, and comfort in research-driven environments make Biotechnology a natural fit. You\'d thrive contributing to next-generation therapies — from biologics to gene therapy — at Canada\'s rapidly growing biotech sector.' },
+      ops: { name: 'Clinical Operations',  url: 'clinical-research.html',   max: 18,
+             why: 'Your project management instincts, cross-functional coordination skills, and ability to keep complex programs running on time and on budget make Clinical Operations a strong match. You\'d excel as a Clinical Trial Manager, steering multi-site studies from site activation through to database lock.' }
+    };
+
+    var questions = [
+      {
+        text: 'Where do you feel most at home at work?',
+        options: [
+          { text: 'In a laboratory, running experiments and working hands-on with science and samples', scores: { bio: 3, qa: 1 } },
+          { text: 'At a desk, crafting strategy and writing detailed regulatory or scientific documents', scores: { ra: 3, pv: 1, mka: 1 } },
+          { text: 'Out in the field, meeting people, building relationships, and driving real-world impact', scores: { ps: 3, ma: 1 } },
+          { text: 'In cross-departmental meetings, coordinating complex projects and keeping teams aligned', scores: { ops: 3, cr: 2, ma: 1 } }
+        ]
+      },
+      {
+        text: 'Which of these daily tasks sounds most exciting to you?',
+        options: [
+          { text: 'Reviewing a drug submission package and ensuring every document meets Health Canada\'s exact requirements', scores: { ra: 3, qa: 2 } },
+          { text: 'Presenting the latest clinical data to specialist physicians who rely on your scientific expertise', scores: { ma: 3, ps: 1 } },
+          { text: 'Investigating an adverse event report to determine whether it signals a real safety risk to patients', scores: { pv: 3, ra: 1, qa: 1 } },
+          { text: 'Visiting a clinical trial site, reviewing source data, and keeping the study on track with investigators', scores: { cr: 3, ops: 2 } }
+        ]
+      },
+      {
+        text: 'What\'s your strongest professional superpower?',
+        options: [
+          { text: 'Writing and documentation — I take complex science or legal language and make it precise and clear', scores: { ra: 3, pv: 1, cr: 1 } },
+          { text: 'Data analysis — I build evidence-based arguments and find insight in numbers, studies, or economic models', scores: { mka: 3, pv: 2, bio: 1 } },
+          { text: 'Communication and persuasion — I connect with people quickly and can get buy-in from almost anyone', scores: { ps: 3, ma: 2 } },
+          { text: 'Organization and process thinking — I thrive when there\'s a system, and I build better ones', scores: { qa: 3, ops: 2, cr: 1 } }
+        ]
+      },
+      {
+        text: 'How do you feel about working directly with healthcare providers — doctors, nurses, pharmacists?',
+        options: [
+          { text: 'I love it — building real relationships with clinicians is one of the biggest reasons I want to be in pharma', scores: { ps: 3, cr: 2 } },
+          { text: 'I want to influence them scientifically, not sell to them — I want to be their trusted medical resource', scores: { ma: 3, pv: 1 } },
+          { text: 'I\'d rather focus on the strategy that shapes what gets to them — access, reimbursement, and health policy', scores: { mka: 3, ra: 1 } },
+          { text: 'I prefer working deep in the science or process — I\'m motivated by discovery and quality, not interaction', scores: { bio: 3, qa: 2, pv: 1 } }
+        ]
+      },
+      {
+        text: 'Which subject genuinely excites you the most?',
+        options: [
+          { text: 'Regulations, government policy, law, and how products move from submission through to market approval', scores: { ra: 3, mka: 2 } },
+          { text: 'Biology, chemistry, molecular science, and the mechanisms that make drugs work at a cellular level', scores: { bio: 3, cr: 2, pv: 1 } },
+          { text: 'Healthcare economics, pricing, reimbursement systems, and how payers decide what gets funded', scores: { mka: 3, ps: 1, ma: 1 } },
+          { text: 'Clinical trial design, protocol writing, and how research becomes real-world evidence for patients', scores: { cr: 3, ops: 3, ra: 1 } }
+        ]
+      },
+      {
+        text: 'How do you prefer to measure your professional success?',
+        options: [
+          { text: 'A Health Canada approval or a flawless audit — every detail was right, and it shows', scores: { ra: 3, qa: 2 } },
+          { text: 'A new therapy gets reimbursed and thousands of patients who couldn\'t afford it before now can access it', scores: { mka: 3, ma: 2, cr: 1 } },
+          { text: 'A sales target crushed, a doctor championing a product, a territory I built from the ground up', scores: { ps: 3, ma: 1 } },
+          { text: 'A scientific paper published, a drug candidate advanced, a therapy that simply didn\'t exist before', scores: { bio: 3, cr: 1, pv: 1 } }
+        ]
+      },
+      {
+        text: 'When a problem lands on your desk, what\'s your first instinct?',
+        options: [
+          { text: 'Check the guidelines — I want to be certain whatever I do next is fully compliant before I move', scores: { ra: 3, qa: 2, pv: 1 } },
+          { text: 'Dig into the data — I\'ll keep analyzing until I\'ve found the root cause and can back it up with evidence', scores: { pv: 3, mka: 2, bio: 1 } },
+          { text: 'Pick up the phone — the best solutions get built through relationships and honest conversations', scores: { ps: 3, ma: 2, ops: 1 } },
+          { text: 'Map the process — find where it broke, fix it properly, and ensure it can\'t happen again', scores: { qa: 3, ops: 2, cr: 1 } }
+        ]
+      },
+      {
+        text: 'What\'s your relationship with travel and working independently?',
+        options: [
+          { text: 'I love being on the road — I\'m energized by new cities, new faces, and owning my own territory', scores: { ps: 3, cr: 2, ops: 1 } },
+          { text: 'Some travel is great, but I want a consistent team and a home base I\'m genuinely part of', scores: { ma: 3, ra: 1, mka: 1 } },
+          { text: 'I want deep focus time in one place — a lab or an office where I can really get into the work', scores: { bio: 3, pv: 2, qa: 1 } },
+          { text: 'I\'m flexible — I\'ll go where the project needs me, whether that\'s a site visit or a strategy session', scores: { ra: 1, cr: 1, ops: 2, mka: 1 } }
+        ]
+      },
+      {
+        text: 'What kind of impact do you most want to have in the pharma industry?',
+        options: [
+          { text: 'Keeping medicines safe — detecting risks and protecting patients from harm long after a drug launches', scores: { pv: 3, qa: 2, ra: 1 } },
+          { text: 'Breaking down barriers — making sure cost and policy never stand between a patient and their treatment', scores: { mka: 3, ma: 2 } },
+          { text: 'Advancing science — contributing to therapies that didn\'t exist before and expanding what medicine can do', scores: { bio: 3, cr: 2 } },
+          { text: 'Running the machine — ensuring clinical programs and operations deliver results on time, every time', scores: { ops: 3, cr: 2, ra: 1 } }
+        ]
+      },
+      {
+        text: 'Which phrase best describes how you naturally work?',
+        options: [
+          { text: 'Methodical and precise — every detail matters, every rule exists for a reason, and I live by both', scores: { ra: 3, qa: 2, pv: 1 } },
+          { text: 'Curious and experimental — I embrace uncertainty, love to discover, and I\'m always asking "what if?"', scores: { bio: 3, cr: 1, mka: 1 } },
+          { text: 'Persuasive and driven — I run toward ambitious goals and I thrive when the pressure is on', scores: { ps: 3, ma: 2, ops: 1 } },
+          { text: 'Strategic and visionary — I see the big picture, architect solutions, and influence through bold ideas', scores: { mka: 3, ma: 2, ops: 1 } }
+        ]
+      }
+    ];
+
+    var currentQ = 0;
+    var answers = new Array(10).fill(null);
+
+    function el(id) { return document.getElementById(id); }
+
+    function showScreen(name) {
+      el('screen-intro').style.display    = name === 'intro'    ? 'block' : 'none';
+      el('screen-question').style.display = name === 'question' ? 'block' : 'none';
+      el('screen-results').style.display  = name === 'results'  ? 'block' : 'none';
+      var anchor = el('quiz-anchor');
+      if (anchor) {
+        setTimeout(function () {
+          anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 60);
+      }
+    }
+
+    function renderQuestion() {
+      var q   = questions[currentQ];
+      var pct = Math.round(((currentQ + 1) / 10) * 100);
+
+      el('progress-fill').style.width = pct + '%';
+      el('progress-pct').textContent  = pct + '%';
+      el('progress-label').textContent = 'Question ' + (currentQ + 1) + ' of 10';
+      el('question-num').textContent   = (currentQ + 1 < 10 ? '0' : '') + (currentQ + 1);
+      el('question-text').textContent  = q.text;
+
+      var list    = el('options-list');
+      list.innerHTML = '';
+      var letters = ['A', 'B', 'C', 'D'];
+
+      q.options.forEach(function (opt, idx) {
+        var div = document.createElement('div');
+        div.className = 'quiz-option' + (answers[currentQ] === idx ? ' selected' : '');
+        div.setAttribute('role', 'button');
+        div.setAttribute('tabindex', '0');
+        div.setAttribute('aria-pressed', answers[currentQ] === idx ? 'true' : 'false');
+        div.innerHTML =
+          '<span class="option-letter">' + letters[idx] + '</span>' +
+          '<span class="option-text">' + opt.text + '</span>';
+        div.addEventListener('click', function () { pickOption(idx); });
+        div.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pickOption(idx); }
+        });
+        list.appendChild(div);
+      });
+
+      var backBtn = el('btn-back');
+      var nextBtn = el('btn-next');
+      backBtn.style.display = currentQ === 0 ? 'none' : 'inline-flex';
+
+      var arrowSvg = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
+      nextBtn.innerHTML = (currentQ === 9 ? 'See My Results ' : 'Next Question ') + arrowSvg;
+      nextBtn.disabled       = answers[currentQ] === null;
+      nextBtn.style.opacity  = answers[currentQ] === null ? '0.45' : '1';
+      nextBtn.style.cursor   = answers[currentQ] === null ? 'not-allowed' : 'pointer';
+    }
+
+    function pickOption(idx) {
+      answers[currentQ] = idx;
+      var opts = document.querySelectorAll('#options-list .quiz-option');
+      opts.forEach(function (o, i) {
+        o.classList.toggle('selected', i === idx);
+        o.setAttribute('aria-pressed', i === idx ? 'true' : 'false');
+      });
+      var nextBtn = el('btn-next');
+      nextBtn.disabled      = false;
+      nextBtn.style.opacity = '1';
+      nextBtn.style.cursor  = 'pointer';
+    }
+
+    function calcScores() {
+      var s = { ra: 0, cr: 0, qa: 0, pv: 0, ma: 0, ps: 0, mka: 0, bio: 0, ops: 0 };
+      for (var i = 0; i < 10; i++) {
+        if (answers[i] === null) continue;
+        var sc = questions[i].options[answers[i]].scores;
+        Object.keys(sc).forEach(function (k) { s[k] += sc[k]; });
+      }
+      return s;
+    }
+
+    function buildResults() {
+      var scores = calcScores();
+      var sorted = Object.keys(scores)
+        .map(function (k) { return { key: k, score: scores[k] }; })
+        .sort(function (a, b) { return b.score - a.score; })
+        .slice(0, 3);
+
+      var container  = el('results-top3');
+      container.innerHTML = '';
+      var rankLabels = ['#1 Match', '#2 Match', '#3 Match'];
+
+      sorted.forEach(function (item, rank) {
+        var career = CAREERS[item.key];
+        var pct    = Math.round((item.score / career.max) * 100);
+        var card   = document.createElement('div');
+        card.className = 'result-card';
+        card.innerHTML =
+          '<div class="result-card-inner">' +
+            '<span class="result-rank-badge">' + rankLabels[rank] + '</span>' +
+            '<h3 class="result-name">' + career.name + '</h3>' +
+            '<div class="result-score-row">' +
+              '<div class="result-score-track">' +
+                '<div class="result-score-fill" data-pct="' + pct + '" style="width:0%"></div>' +
+              '</div>' +
+              '<span class="result-score-num" data-target="' + pct + '">0%</span>' +
+            '</div>' +
+            '<p class="result-why">' + career.why + '</p>' +
+            '<a href="' + career.url + '" class="result-cta-btn">' +
+              'Read the Full Career Guide ' +
+              '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>' +
+            '</a>' +
+          '</div>';
+        container.appendChild(card);
+      });
+    }
+
+    function animateScores() {
+      setTimeout(function () {
+        document.querySelectorAll('.result-score-fill').forEach(function (bar) {
+          bar.style.width = bar.dataset.pct + '%';
+        });
+        document.querySelectorAll('.result-score-num').forEach(function (num) {
+          var target = parseInt(num.dataset.target, 10);
+          var current = 0;
+          var step = target / 60;
+          var timer = setInterval(function () {
+            current = Math.min(current + step, target);
+            num.textContent = Math.round(current) + '%';
+            if (current >= target) clearInterval(timer);
+          }, 20);
+        });
+      }, 300);
+    }
+
+    /* ── Public API ── */
+    window.quizStart = function () {
+      currentQ = 0;
+      answers  = new Array(10).fill(null);
+      showScreen('question');
+      renderQuestion();
+    };
+
+    window.quizNext = function () {
+      if (answers[currentQ] === null) return;
+      if (currentQ < 9) {
+        currentQ++;
+        renderQuestion();
+      } else {
+        buildResults();
+        showScreen('results');
+        animateScores();
+      }
+    };
+
+    window.quizBack = function () {
+      if (currentQ > 0) { currentQ--; renderQuestion(); }
+    };
+
+    window.quizRetake = function () {
+      currentQ = 0;
+      answers  = new Array(10).fill(null);
+      showScreen('intro');
+    };
+
+  }());
+  </script>
+
+</body>
+</html>
