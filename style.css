@@ -16,6 +16,8 @@
   --gray-100: #f5f3ef;
   --gray-200: #e8e5df;
   --gray-300: #d4d0c9;
+  --gray-400: #b0aba3;
+  --gray-500: #8f8b84;
   --gray-600: #6b665d;
   --gray-700: #4a463e;
   --gray-800: #2a2723;
@@ -1376,9 +1378,7 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(13, 13, 13, 0.97);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    background: #0d0d0d;
     justify-content: center;
     align-items: center;
     gap: 36px;
@@ -1464,7 +1464,27 @@ ul {
   }
 
   section, .about, .careers, .resources, .community, .contact {
-    padding: 96px 0;
+    padding: 72px 0;
+  }
+
+  .btn-small {
+    padding: 13px 26px;
+  }
+
+  .newsletter-input-group {
+    flex-direction: column;
+  }
+
+  .section-tag {
+    font-size: 0.78rem;
+  }
+
+  .hero-tag {
+    font-size: 0.82rem;
+  }
+
+  .meta-label {
+    font-size: 0.78rem;
   }
 }
 
@@ -1485,10 +1505,6 @@ ul {
 
   .about-pillars {
     grid-template-columns: 1fr;
-  }
-
-  .newsletter-input-group {
-    flex-direction: column;
   }
 
   .contact-form-wrapper {
